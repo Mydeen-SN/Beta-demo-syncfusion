@@ -13,7 +13,7 @@ System.config({
     "*": "src/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*",
-    "ej.*": "jspm_packages/github/syncfusion/JavaScript-Widgets@14.1.41/Scripts/web/ej.*.js"
+    "ej.*": "vendors/scripts/web/ej.*.js"
   },
   "meta": {
     "showdown/dist/showdown.js": {
@@ -27,11 +27,11 @@ System.config({
     "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.2.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.2",
     "aurelia-http-client": "npm:aurelia-http-client@1.0.0-beta.1.2.0",
+    "aurelia-syncfusion-bridge": "npm:test-syncfusion-bridge@0.0.4",
     "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.2.0",
     "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.0",
     "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.0",
     "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.0",
-    "aurelia-syncfusion-bridge": "npm:test-syncfusion-bridge@0.0.4",
     "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.0",
     "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.2.2",
     "babel": "npm:babel-core@5.8.38",
@@ -50,7 +50,6 @@ System.config({
     "prism": "github:PrismJS/prism@1.3.0",
     "showdown": "github:showdownjs/showdown@1.3.0",
     "showdown-prettify": "npm:showdown-prettify@1.3.0",
-    "syncfusion-javascript": "github:syncfusion/JavaScript-Widgets@14.1.41",
     "text": "github:systemjs/plugin-text@0.0.4",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -152,6 +151,15 @@ System.config({
     "npm:aurelia-http-client@1.0.0-beta.1.2.0": {
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.0",
       "aurelia-path": "npm:aurelia-path@1.0.0-beta.1.2.1"
+    },
+    "npm:aurelia-kendoui-bridge@0.8.1": {
+      "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.2",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.0",
+      "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.0",
+      "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.0",
+      "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0-beta.1.2.0",
+      "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.2.2",
+      "aurelia-templating-resources": "npm:aurelia-templating-resources@1.0.0-beta.1.2.2"
     },
     "npm:aurelia-loader-default@1.0.0-beta.1.2.1": {
       "aurelia-loader": "npm:aurelia-loader@1.0.0-beta.1.2.0",
@@ -425,7 +433,7 @@ System.config({
     }
   },
   "bundles": {
-    "app-build-d82177e98c": [
+    "app-build-3bb2aaf4a6": [
       "about/about",
       "about/about.html!github:systemjs/plugin-text@0.0.4",
       "app",
@@ -1193,12 +1201,8 @@ System.config({
       "npm:core-js@2.2.2/library/web/immediate",
       "npm:core-js@2.2.2/library/web/index",
       "npm:core-js@2.2.2/library/web/timers",
-      "npm:jquery.easing@1.3.2",
-      "npm:jquery.easing@1.3.2/jquery.easing",
       "npm:jquery@2.2.3",
       "npm:jquery@2.2.3/dist/jquery",
-      "npm:jsrender@0.9.75",
-      "npm:jsrender@0.9.75/jsrender",
       "npm:process@0.11.2",
       "npm:process@0.11.2/browser",
       "npm:showdown-prettify@1.3.0",
